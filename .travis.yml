@@ -14,4 +14,4 @@ before_install:
   - docker build -t rogeriojma/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true rogeriojma/react-rest npm run test
+  - docker run -e CI=true rogeriojma/react-test npm run test
