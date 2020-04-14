@@ -1,6 +1,6 @@
 docker build -t rogeriojma/multi-client:latest -t rogeriojma/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t rogeriojma/multi-server:latest -t rogeriojma/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t rogeriojma/multi-worker:latest -r rogeriojma/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t rogeriojma/multi-worker:latest -t rogeriojma/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push rogeriojma/multi-client:latest
 docker push rogeriojma/multi-server:latest
